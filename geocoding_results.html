@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geocoding Results</title>
+</head>
+<body>
+    <h1>Geocoding Results</h1>
+    <ul>
+        {% for result in geocoding_results %}
+        <li>{{ result }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

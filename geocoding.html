@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geocoding App</title>
+</head>
+<body>
+    <h1>Geocoding App</h1>
+    <p>Enter a location:</p>
+    <form action="/process-geocoding" method="post">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+        <label for="count">Count:</label>
+        <input type="text" id="count" name="count" required><br>
+        {% if invalid_count %}
+        <p style="color: red;">Invalid input. Please select one of these options available: 1, 10, 20, 50, 100.</p>
+        {% endif %}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
